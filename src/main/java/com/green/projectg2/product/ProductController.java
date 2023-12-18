@@ -26,7 +26,7 @@ public class ProductController {
         return Pservice.getP(dto);
     }
 
-    @PatchMapping
+    @PutMapping
     public ResVo PutIt(@RequestBody ProductPatchDto dto) {
         return Pservice.putP(dto);
     }
@@ -35,6 +35,12 @@ public class ProductController {
     public ResVo DeleteIt(ProductDelDto dto) {
         return Pservice.delP(dto);
     }
+
+    @PatchMapping
+    public ResVo CompleteBuy(ProductCompleteDto dto) {
+        return Pservice.
+    }
+
 
 }
 
