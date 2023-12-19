@@ -38,10 +38,8 @@ public class ProductController {
 
     @PatchMapping
     public ResVo CompleteBuy(ProductCompleteDto dto) {
-        return Pservice.
+        return Pservice.comP(dto);
     }
-
-
 }
 
 // 예외찾을때는 swagger에서 하나씩 입력함으로써 찾아볼것

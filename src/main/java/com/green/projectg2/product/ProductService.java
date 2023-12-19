@@ -54,5 +54,14 @@ public class ProductService {
         return new ResVo(1);
     }
 
+    public ResVo comP(ProductCompleteDto dto) {
+        int result = pMapper.CompleteProduct(dto);
+
+        if(result == 0) {
+            return new ResVo(0);
+        }
+        return new ResVo(1);
+    }
+
 
 }
